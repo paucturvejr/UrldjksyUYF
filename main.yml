@@ -18,9 +18,6 @@ jobs:
       - name: install deps
         run: pip3 install scrap_engine
 
-      - name: gen-wiki
-        run: python3 ./gen_wiki.py
-        
       - name: Commit files
         run: |
           git config --local user.name  ${{ github.actor }}
